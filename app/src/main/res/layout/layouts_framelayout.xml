@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="114dp"
+        android:text="下層                                  "
+        android:id="@+id/button34"
+        android:layout_gravity="center" />
+
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="150dp"
+        android:text="上層"
+        android:id="@+id/button35"
+        android:layout_gravity="center" />
+</FrameLayout>

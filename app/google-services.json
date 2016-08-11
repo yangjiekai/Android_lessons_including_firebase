@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "471717452892",
+    "firebase_url": "https://ultrafirebase.firebaseio.com",
+    "project_id": "ultrafirebase",
+    "storage_bucket": "ultrafirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471717452892:android:e308a5a27448b82d",
+        "android_client_info": {
+          "package_name": "com.project.ultra.jack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471717452892-lsj0k7ajchokvl8mva7e0l5ng6epuq89.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.ultra.jack",
+            "certificate_hash": "165977F328DB3A5593252267CD16AC268286412F"
+          }
+        },
+        {
+          "client_id": "471717452892-1mt6g0uq6b3i6vp74t2sdejs1q3ijga0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKt5v1PIpkj--4PNCgTFMccrr9qWGd9rw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471717452892-1mt6g0uq6b3i6vp74t2sdejs1q3ijga0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

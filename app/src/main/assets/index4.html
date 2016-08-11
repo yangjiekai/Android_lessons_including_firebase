@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" />
+<meta charset="utf-8">
+<title>無標題文件</title>
+<link href="jquery-mobile/jquery.mobile.theme-1.4.5.min.css" rel="stylesheet">
+<link href="jquery-mobile/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet" >
+<link rel="stylesheet" type="text/css" href="jquery-mobile/jquery.mobile.icons-1.4.5.min.css">
+<link rel="stylesheet" type="text/css" href="jquery-mobile/jquery.mobile.icons.min.css">
+<link rel="stylesheet" type="text/css" href="jquery-mobile/zero1.css">
+<style>
+.ui-icon-icon1:after{
+	background-image: url(images/icon/01.png);
+	background-color:transparent;
+	background-size:contain;	
+}
+.ui-icon-icon2:after{
+	background-image: url(images/icon/02.png);
+	background-color:transparent;
+	background-size:contain;
+}
+</style>
+<script src="js/jquery-1.12.0.min.js" ></script>
+<script src="jquery-mobile/jquery.mobile-1.4.5.min.js" ></script>
+<script>
+
+    $(document).on("pagebeforecreate",function(){
+	$('[data-role=footer]').attr('data-position',"fixed");
+	
+	
+  //alert("pagecreate 事件触发!")
+
+});
+</script>
+</head>
+
+<body>
+<!--首頁-->
+<div data-role="page" id="page1" data-theme="a">
+  <div data-role="header">
+    <h1>好好吃麵包首頁</h1>    
+  </div>
+  <div data-role="navbar" >
+    <ul>
+      <li><a data-icon="alert" href="#page2" data-inline="true" data-transition="slideup">產品簡介</a></li>
+      <li> <a class="ui-btn ui-icon-heart ui-btn-icon-bottom" data-transition="slideup" data-role="button" data-inline="true" href="#page3">連到第3頁</a></li>
+      <li> <a class="ui-btn ui-icon-icon2 ui-btn-icon-top" data-transition="slideup" data-role="button" data-inline="true" href="#page4">連到第4頁</a></li>
+    </ul>
+  </div>
+  <div data-role="content">
+    <h2>內容</h2>
+  </div>
+  <div data-role="footer">
+    <h4>頁尾</h4>
+  </div>
+</div>
+<!--第2頁-->
+<div data-role="page" id="page2">
+  <div data-role="header" data-add-back-btn="true">
+    <h1>產品簡介</h1>
+    <a href="#" data-role="button" data-rel="back">回來吧~</a>
+  </div>
+  <div data-role="content">
+  包主
+  個人經歷
+  得獎記事
+  <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">显示弹窗</a>
+
+<div data-role="popup" id="myPopup">
+  <p>这是一个简单的弹窗</p>
+</div>
+  </div>
+  <div data-role="footer">
+    <h4>頁尾</h4>
+  </div>
+</div>
+<!--第3頁-->
+<div data-role="page" id="page3">
+  <div data-role="header">
+    <h1>第3頁</h1>
+    <a href="#" data-role="button" data-rel="back">回來吧~</a>
+  </div>
+  <div data-role="content">內容</div>
+  <div data-role="footer">
+    <h4>頁尾</h4>
+  </div>
+</div>
+<!--第4頁-->
+<div data-role="page" id="page4">
+  <div data-role="header">
+    <h1>第4頁</h1>
+    <a href="#" data-role="button" data-rel="back">回來吧~</a>
+  </div>
+  <div data-role="content">內容</div>
+  <div data-role="footer">
+    <h4>頁尾</h4>
+  </div>
+</div>
+
+</body>
+</html>

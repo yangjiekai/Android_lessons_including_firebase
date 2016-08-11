@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="tw.com.pcschool.t072603.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="title"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_add"
+        android:orderInCategory="100"
+        android:title="ADD"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="About"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="always" />
+</menu>

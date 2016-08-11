@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" />
+<meta charset="utf-8">
+<title>無標題文件</title>
+<link href="jquery-mobile/jquery.mobile.theme-1.4.5.min.css" rel="stylesheet">
+<link href="jquery-mobile/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet" >
+<link rel="stylesheet" type="text/css" href="jquery-mobile/jquery.mobile.icons-1.4.5.min.css">
+<link rel="stylesheet" type="text/css" href="jquery-mobile/jquery.mobile.icons.min.css">
+<link rel="stylesheet" type="text/css" href="jquery-mobile/zero1.css">
+<style>
+.ui-icon-icon1:after{
+	background-image: url(images/icon/01.png);
+	background-color:transparent;
+	background-size:contain;	
+}
+.ui-icon-icon2:after{
+	background-image: url(images/icon/02.png);
+	background-color:transparent;
+	background-size:contain;
+}
+</style>
+<script src="js/jquery-1.12.0.min.js" ></script>
+<script src="jquery-mobile/jquery.mobile-1.4.5.min.js" ></script>
+<script>
+
+    $(document).on("pagebeforecreate",function(){
+	$('[data-role=footer]').attr('data-position','fixed');
+	$('a[data-rel=popup]').attr('data-transition','fade');  
+});
+function show(){
+	if(select01.selectedIndex==0){
+	alert('on');
+	}else if(select01.selectedIndex==1){
+	alert('off');
+	}
+}
+
+$(document).ready(function(e) {
+    
+	$('[data-role=collapsible]:eq(0) div').load('product.txt #w1');
+		
+		
+});
+
+
+</script>
+</head>
+
+<body>
+<!--首頁-->
+<div data-role="page" id="page1" data-theme="a">
+  <div data-role="header">
+    <h1>好好吃麵包首頁</h1>    
+  </div>
+  <div data-role="navbar" >
+    <ul>
+      <li><a data-icon="alert" href="#page2" data-inline="true" data-transition="slideup">產品簡介</a></li>
+      <li> <a class="ui-btn ui-icon-heart ui-btn-icon-bottom" data-transition="slideup" data-role="button" data-inline="true" href="#page3">連到第3頁</a></li>
+      <li> <a class="ui-btn ui-icon-icon2 ui-btn-icon-top" data-transition="slideup" data-role="button" data-inline="true" href="#page4">連到第4頁</a></li>
+    </ul>
+  </div>
+  <div data-role="content"> 
+  
+  <a href="#ab1" data-rel="popup" data-role="button" data-position-to="window" >包主</a>
+  <a href="#ab2" data-rel="popup" data-role="button" data-position-to="window" >個人經歷</a>
+  <a href="#ab3" data-rel="popup" data-role="button" data-position-to="window" >得獎記事</a>
+
+    <div data-role="popup" id="ab1" data-position-to="window">
+      <h3>包主</h3>
+      <p>我是包主我是包主我是包主我是包主</p>
+      <p>我是包主我是包主我是包主我是包主</p>
+    </div>
+    <div data-role="popup" id="ab2">
+    	<h3>個人經歷</h3>
+      <p>個人經歷個人經歷個人經歷</p>
+    </div>
+    <div data-role="popup" id="ab3">
+    	<h3>得獎記事</h3>
+      <p>得獎記事得獎記事得獎記事</p>
+    </div>
+  </div>
+  <div data-role="footer">
+    <h4>頁尾</h4>
+  </div>
+</div>
+<!--第2頁-->
+<div data-role="page" id="page2">
+  <div data-role="header" data-add-back-btn="true">
+    <h1>產品簡介</h1>
+    <a href="#" data-role="button" data-rel="back">回來吧~</a>
+  </div>
+  <div data-role="content">
+  
+  <div data-role="collapsible">
+        <h3>点击我 - 我可以折叠!</h3>
+        <div>我是可折叠的内容。</div>            
+	</div>
+    
+    <div data-role="collapsible">
+        <h3>点击我 - 我可以折叠!</h3>
+        <p>我是可折叠的内容。</p>
+	</div>
+    
+    <div data-role="collapsible">
+        <h3>点击我 - 我可以折叠!</h3>
+        <p>我是可折叠的内容。</p>
+	</div>
+
+  </div>
+  <div data-role="footer">
+    <h4>頁尾</h4>
+  </div>
+</div>
+<!--第3頁-->
+<div data-role="page" id="page3">
+  <div data-role="header">
+    <h1>第3頁</h1>
+    <a href="#" data-role="button" data-rel="back">回來吧~</a>
+  </div>
+  <div data-role="content">
+    <label>電話：</label><input type="tel">
+    
+  <select id="mysize" size="4" data-native-menu="false">
+    <option value="縣市">none</option>
+    <!--<option value="台北市">台北市</option>
+    <option value="新北市">新北市</option>
+    <option value="台中市">台中市</option>-->
+  </select>
+  
+  <select id="select01" data-role="slider" onChange="show()">
+	<option value="0">是</option>
+	<option value="1">否</option>
+</select>
+
+
+  
+  
+  
+  
+  </div>
+  <div data-role="footer">
+    <h4>頁尾</h4>
+  </div>
+</div>
+<!--第4頁-->
+<div data-role="page" id="page4">
+  <div data-role="header">
+    <h1>第4頁</h1>
+    <a href="#" data-role="button" data-rel="back">回來吧~</a>
+  </div>
+  <div data-role="content">內容</div>
+  <div data-role="footer">
+    <h4>頁尾</h4>
+  </div>
+</div>
+
+</body>
+</html>

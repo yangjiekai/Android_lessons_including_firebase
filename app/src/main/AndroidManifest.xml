@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.ultra.myapplication">
+
+    <!-- 開啟連外部網頁權限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service android:name="com.project.ultra.jack.Firebase">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.project.ultra.jack.MyReceiveToken">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.project.ultra.jack.MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
+
+
+        <activity android:name="com.project.ultra.jack.studentDB_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.project.ultra.jack.ListViewMyAapterArrayListActivity" />
+        <activity android:name="com.project.ultra.jack.SecActivity" />
+        <activity android:name="com.project.ultra.jack.webviewActivity" />
+        <activity android:name="com.project.ultra.jack.ResultActivity" />
+        <activity android:name="com.project.ultra.jack.ResultSecActivity" />
+        <activity android:name="com.project.ultra.jack.FormWidetsActivity" />
+        <activity android:name="com.project.ultra.jack.ThreadProgressbar" />
+        <activity android:name="com.project.ultra.jack.FormExpertActivity" />
+        <activity android:name="com.project.ultra.jack.ImagesMediaActivity" />
+        <activity
+            android:name="com.project.ultra.jack.FadActivity"
+            android:label="@string/title_activity_fad"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.project.ultra.jack.DialogActivity" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Google Map API key -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name="com.project.ultra.jack.LayoutsActivit" />
+        <activity android:name="com.project.ultra.jack.MenuActivity" />
+        <activity android:name="com.project.ultra.jack.MenuAddActivity" />
+        <activity android:name="com.project.ultra.jack.MenuInflaterActivity" />
+        <activity android:name="com.project.ultra.jack.ListViewActivity" />
+        <activity android:name="com.project.ultra.jack.ContextMenuActivity" />
+        <activity android:name="com.project.ultra.jack.ListViewTwolineActivity" />
+        <activity android:name="com.project.ultra.jack.ListViewMyAdapterActivity" />
+        <activity android:name="com.project.ultra.jack.MainActivity" />
+        <activity android:name="com.project.ultra.jack.ListViewMyAapterArrayListActivity_detail" />
+        <activity android:name="com.project.ultra.jack.http_other_threadActivity" />
+        <activity android:name="com.project.ultra.jack.http_get_picture" />
+        <activity android:name="com.project.ultra.jack.json_parsor_http" />
+        <activity android:name="com.project.ultra.jack.gson" />
+        <activity android:name="com.project.ultra.jack.AsyncTask" />
+        <activity android:name="com.project.ultra.jack.Sharepreference" />
+        <activity
+            android:name="com.project.ultra.jack.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.project.ultra.jack.Sharepreference">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.project.ultra.jack.Sharepreference" />
+        </activity>
+        <activity android:name="com.project.ultra.jack.MySettingActivity" />
+        <activity android:name="com.project.ultra.jack.from_local_json" />
+        <activity android:name="com.project.ultra.jack.file_cache_for_internal" />
+        <activity android:name="com.project.ultra.jack.DAO_Activity" />
+        <activity android:name="com.project.ultra.jack.dao_add_activity" />
+        <activity android:name="com.project.ultra.jack.dao_detail_activity" />
+        <activity android:name="com.project.ultra.jack.db_sqllite" />
+        <activity android:name="com.project.ultra.jack.dao_db_add_activity" />
+        <activity android:name="com.project.ultra.jack.detail_db_dao_activity" />
+        <activity android:name="com.project.ultra.jack.GPSlocation" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <!--<activity-->
+            <!--android:name="com.project.ultra.jack.MapsActivity"-->
+            <!--android:label="@string/title_activity_maps"></activity>-->
+
+
+
+    </application>
+
+</manifest>
